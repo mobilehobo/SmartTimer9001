@@ -83,6 +83,7 @@ public class SwingGUI
         if(alarm1.isEnabled())
         {
 	        timer.start();
+	        System.out.println("bruh");
         }
         
 		setAlarmOneButton.addActionListener(new AlarmFrame());	
@@ -239,11 +240,11 @@ public class SwingGUI
 			else
 				alarm1.setEnable(false);
 			
-			/*timer = new TimerWrapper(alarm1);
+			timer = new TimerWrapper(alarm1);
 	        if(alarm1.isEnabled())
 	        {
 		        timer.start();
-	        }*/
+	        }
 			
 			JFrame settingFrame = new JFrame("Alarm Info");
 			settingFrame.setVisible(true);
