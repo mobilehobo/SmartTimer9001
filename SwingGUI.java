@@ -36,7 +36,6 @@ public class SwingGUI
 			ArrayList<String> settingArray = new ArrayList<String>();
 			String line;
 			int i = 0;
-			/*Stream<String> inputStream = Files.lines(Paths.get(settings.toString()), Charset.defaultCharset())*/
 			try
 			{
 				BufferedReader reader = new BufferedReader(new FileReader(settings.getAbsolutePath()));
@@ -240,9 +239,10 @@ public class SwingGUI
 			else
 				alarm1.setEnable(false);
 			
-			timer = new TimerWrapper(alarm1);
+			//timer = new TimerWrapper(alarm1);
 	        if(alarm1.isEnabled())
 	        {
+	        	timer.stop();
 		        timer.start();
 	        }
 			

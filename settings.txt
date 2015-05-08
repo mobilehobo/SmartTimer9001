@@ -1,0 +1,7 @@
+20:01
+Alarm Message
+19:59
+Reminder Message
+true
+true
+C:\Program Files\7-Zip\7zFM.exe
